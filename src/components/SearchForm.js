@@ -1,6 +1,10 @@
-import React from 'react'
+//stateful component
+import React, { useState } from 'react'
 
+//when search input is submitted, update state
 function SearchForm() {
+    const [ searchParam, setSearchParam ] = useState('');
+
     return (
         <div >
             <form className="search-form">
