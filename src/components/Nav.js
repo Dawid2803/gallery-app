@@ -1,14 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function Nav() {
+function Nav(props) {
     return (
         <div>
             <nav className="main-nav">
                 <ul>
-                    <NavLink to="#"> Cats </NavLink>
-                    <NavLink to="#"> Dogs </NavLink>
-                    <NavLink to="#"> Computers </NavLink>
+                    <li><NavLink to={`/${props.topics[0]}`}> {props.topics[0]} </NavLink></li>
+                    <li><NavLink to={`/${props.topics[1]}`}> {props.topics[1]} </NavLink></li>
+                    <li><NavLink to={`/${props.topics[2]}`}> {props.topics[2]} </NavLink></li>
                 </ul>
             </nav>
         </div>
