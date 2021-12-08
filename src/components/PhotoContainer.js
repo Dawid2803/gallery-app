@@ -8,7 +8,9 @@ export class PhotoContainer extends Component {
         activePhotoGallery: []
     };
 
-    render() {
+    render() 
+    {
+        
         
         return (
             <div>

@@ -20,10 +20,10 @@ export class App extends Component {
   };
   
   componentDidMount(){
-    axios.get('https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=21f2f2772a3f8e11f5d18959a8d63eca&tags=cats&per_page=24&format=json&nojsoncallback=1')
+    axios.get('https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=09c4b273fe9136275a25231194314587&tags=cats&per_page=24&format=json&nojsoncallback=1')
   .then(response => { 
     this.setState({
-      photoGal: response.data.photos
+      photoGal: response.data.photos.photo
     })
     console.log(this.state.photoGal);
   })
